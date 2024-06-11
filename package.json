@@ -1,0 +1,26 @@
+{
+  "name": "member-club",
+  "description": "Aplicação Web para acompanhamento de recompensa de cortes de cabelo.",
+  "author": "Eduardo Link",
+  "scripts": {
+    "server": "json-server --watch db.json --port 3333",
+    "dev": "webpack serve",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.11",
+    "json-server": "^1.0.0-beta.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "babel-loader": "^9.1.3",
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.0",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  }
+}
