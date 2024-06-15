@@ -1,0 +1,29 @@
+.title-md {
+  font: var(--fw-bold) var(--fs-xl)/1.4 var(--font-family);
+}
+
+.title-sm {
+  font: var(--fw-bold) var(--fs-lg)/1.4 var(--font-family);
+}
+
+.subtitle-md {
+  font: var(--fw-bold) var(--fs-sm)/1.4 var(--font-family);
+  text-transform: uppercase;
+}
+
+.subtitle-sm {
+  font: var(--fw-bold) var(--fs-xs)/1.4 var(--font-family);
+  text-transform: uppercase;
+}
+
+.text-md {
+  font: var(--fw-regular) var(--fs-md)/1.4 var(--font-family);
+}
+
+.text-sm {
+  font: var(--fw-regular) var(--fs-sm)/1.4 var(--font-family);
+}
+
+.text-xs {
+  font: var(--fw-regular) var(--fs-xs)/1.4 var(--font-family);
+}

@@ -28,7 +28,7 @@ header {
     background-color: var(--gray-300);
     border: 1px solid var(--gray-400);
     border-radius: 0.75rem;
-    font: var(--fw-regular) var(--fs-md)/1.4 var(--font-family);
+    /* font: var(--fw-regular) var(--fs-md)/1.4 var(--font-family); */
 
     &::placeholder {
       color: var(--gray-500);
