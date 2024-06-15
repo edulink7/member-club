@@ -1,5 +1,7 @@
 .user-history {
-  border: 1px solid red;
+  background-color: var(--gray-100);
+  border: 1px solid var(--gray-300);
+  border-radius: 1rem;
   width: 20rem;
 }
 
