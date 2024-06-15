@@ -77,7 +77,7 @@ header {
 @media (width < 80em) {
   header {
     gap: 1rem;
-    margin: 0.75rem;
+    /* margin: 0.75rem; */
     margin-top: 2rem;
 
     & img {

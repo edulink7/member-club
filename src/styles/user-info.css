@@ -1,0 +1,43 @@
+#user-info {
+  margin-inline: auto;
+  margin-top: 4rem;
+  width: fit-content;
+  
+  display: grid;
+  grid-template-areas: 
+  "PROFILE CARD CARD"
+  "HISTORY CARD CARD"
+  "HISTORY PROGRESS PROGRESS";
+  gap: 1rem 1.5rem;
+
+  & .user-profile {
+    grid-area: PROFILE;
+  }
+
+  & .user-card {
+    grid-area: CARD;
+  }
+
+  & .user-history {
+    grid-area: HISTORY;
+  }
+
+  & .user-progress {
+    grid-area: PROGRESS;
+  }
+}
+
+@media (width < 80rem) {
+  #user-info {
+    margin-top: 1.25rem;
+
+    grid-template-areas: 
+    "PROFILE"
+    "CARD"
+    "PROGRESS"
+    "HISTORY";
+    gap: 0.5rem;
+
+  }
+  
+}

@@ -1,0 +1,10 @@
+.user-progress {
+  border: 1px solid red;
+  width: 35.5rem;
+}
+
+@media (width < 80em) {
+  .user-progress {
+    width: 21.875rem;
+  }
+}

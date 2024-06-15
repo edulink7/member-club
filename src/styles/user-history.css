@@ -1,0 +1,10 @@
+.user-history {
+  border: 1px solid red;
+  width: 20rem;
+}
+
+@media (width < 80em) {
+  .user-history {
+    width: 21.875rem;
+  }
+}
