@@ -29,7 +29,8 @@
       display: flex;
       flex-grow: 1;
       gap: 0.75rem;
-
+      align-items: center
+      ;
       & .progress-total {
         position: relative;
         background-color: var(--gray-300);
@@ -49,6 +50,7 @@
       & span {
         color: var(--gray-500);
         white-space: nowrap;
+        text-align: center;
       }
     } 
   } 
