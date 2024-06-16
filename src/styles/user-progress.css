@@ -3,10 +3,110 @@
   border: 1px solid var(--gray-300);
   border-radius: 1rem;
   width: 35.5rem;
+
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  padding: 2rem;
+  & .progress-container {
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    justify-content: center;
+
+    & > h2 {
+      font: var(--fw-bold) var(--fs-xl)/1.4 var(--font-family);
+    }
+
+    & > h2 > span {
+      color: var(--gray-500);
+      font: var(--fw-regular) var(--fs-md)/1.4 var(--font-family);
+    }
+
+    & .progress-bar {
+      display: flex;
+      flex-grow: 1;
+      gap: 0.75rem;
+
+      & .progress-total {
+        position: relative;
+        background-color: var(--gray-300);
+        border-radius: 9999px;
+        width: 21.875rem;
+        height: 0.5rem;
+
+        & .progress-current {
+          position: absolute;
+          inset: 0;
+          width: 20%;
+          background: var(--gradient-base);
+          border-radius: 9999px;
+        }
+      }
+
+      & span {
+        color: var(--gray-500);
+        white-space: nowrap;
+      }
+    } 
+  } 
+
+  & .gift {
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: var(--gray-200);
+    border-radius: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & img {
+      width: 4rem;
+      height: auto;
+      object-fit: cover;
+    }
+  }
 }
 
 @media (width < 80em) {
   .user-progress {
     width: 21.875rem;
+
+    gap: 1.5rem;
+    padding: 1rem 1.25rem;
+   
+    & .progress-container {
+      gap: 0.25rem;
+
+      & > h2 {
+        font: var(--fw-bold) var(--fs-lg)/1.4 var(--font-family);
+      }
+  
+      & > h2 > span {
+        font: var(--fw-regular) var(--fs-sm)/1.4 var(--font-family);
+      }
+  
+      & .progress-bar {
+  
+        & .progress-total {
+          width: 11.375rem;          
+        }
+  
+      } 
+    } 
+
+    & .gift {
+      width: 3.5rem;
+      height: 3.5rem;
+  
+      & img {
+        width: 2.5rem;
+        height: auto;
+        object-fit: cover;
+      }
+    }
   }
 }
