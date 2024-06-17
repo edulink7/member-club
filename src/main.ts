@@ -14,3 +14,4 @@ import "./styles/user-progress.css"
 import "./styles/user-history.css"
 
 // JS
+import "./modules/input-id.ts"

@@ -6,7 +6,7 @@ module.exports = {
   target: "web",
   mode: "development",
 
-  entry: path.resolve(__dirname, "src", "main.js"),
+  entry: path.resolve(__dirname, "src", "main.ts"),
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist")
@@ -42,15 +42,23 @@ module.exports = {
         use: ["style-loader", "css-loader"]
       },
       {
-        test: /\.js$/,
+        test: /\.ts$/,
         exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: ["@babel/preset-env"],
-          }
-        }
-      }
+        use: [
+          {
+            loader: "babel-loader",
+            options: {
+              presets: ["@babel/preset-env"],
+            }
+          },
+          {
+            loader: 'ts-loader',
+            options: {
+              transpileOnly: true,
+            },
+          },
+        ],
+      },
     ]
   }
 }
