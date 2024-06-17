@@ -35,6 +35,10 @@ module.exports = {
     })
   ],
 
+  resolve: {
+    extensions: ['.jsx', '.ts', '.tsx', '...']
+  },
+
   module: {
     rules: [
       {
@@ -53,9 +57,6 @@ module.exports = {
           },
           {
             loader: 'ts-loader',
-            options: {
-              transpileOnly: true,
-            },
           },
         ],
       },
