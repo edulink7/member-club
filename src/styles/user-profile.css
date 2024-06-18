@@ -28,8 +28,9 @@
       border: 1.5px solid var(--gray-100);
       border-radius: inherit;
       width: 3.125rem;
-      height: auto;
+      height: 3.125rem;
       object-fit: cover;
+      background: white;
       
     }
   }

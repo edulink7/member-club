@@ -36,8 +36,9 @@
   }
 
   & .card-progress {
+    --gridCols: 5;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(var(--gridCols), 1fr);
     gap: 1rem;
     margin-top: 2rem;
 
