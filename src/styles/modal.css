@@ -1,0 +1,79 @@
+body {
+  position: relative;
+}
+
+.modal-container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  margin-top: -4rem;
+  inset: 0;
+  background: rgba(211, 207, 210, 0.8);
+  z-index: 3;
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  & .modal {
+    width: fit-content;
+    max-width: 80%;
+    height: auto;
+    background-color: var(--gray-100);
+    position: relative;
+    border-radius: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+
+    & .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+
+      & h2 {
+        color: var(--gray-700);
+      }
+      & .information {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+
+        & span {
+          color: var(--gray-500);
+        }
+        & img {
+          width: 4rem;
+          height: 4rem;
+          object-fit: cover;          
+        }
+      }
+    }
+
+    & > img {
+      width: 4rem;
+      height: auto;
+      object-fit: cover;
+      border-bottom: 2rem;
+      position: absolute;
+      top: 0.5rem;
+      left: 0.5rem;
+    }
+
+    & > button {
+      position: absolute;
+      top: 0.125rem;
+      right: 0.125rem;
+      border: none;
+      background: transparent;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+    
+  }
+}
