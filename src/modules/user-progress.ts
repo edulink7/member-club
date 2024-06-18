@@ -12,4 +12,11 @@ export function LoadUserProgress(user: IUserInfo) {
 
   const progressText = document.querySelector(".progress-bar span")
   progressText.textContent = `${totalCuts} de ${cutsNeeded}`
+
+  const giftImage = document.querySelector(".gift img") as HTMLImageElement
+  if (totalCuts === cutsNeeded) {
+    giftImage.classList.add("complete")
+  } else { 
+    giftImage.classList.remove("complete")
+  }
 }

@@ -10,7 +10,7 @@ const closeButton = document.querySelector(".modal button") as HTMLButtonElement
 addEventListener("click", (event) => {
   if(event.target === giftButton) {
     //Test if reached goal
-    if(giftButton.hasAttribute("completed"))
+    if(giftButton.classList.contains("complete"))
       Congratulations()
   }
   if(event.target === modalContainer) {

@@ -13,8 +13,11 @@ export async function handleSubmit({ id }: IUserIdentification) {
     LoadUserCard(userInfo)
     LoadUserProgress(userInfo)
     LoadUserHistory(userInfo)
-    if (userInfo.loyaltyCard.cutsNeeded === userInfo.loyaltyCard.totalCuts)
-      Congratulations()
+    if (userInfo.loyaltyCard.cutsNeeded === userInfo.loyaltyCard.totalCuts) {
+      setTimeout(() => {
+        Congratulations()
+      }, 1200)
+    }
   } catch (error) {
     //TODO Modal
     ShowModal({ 

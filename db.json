@@ -47,9 +47,9 @@
         {"date": "26/11/2023", "time": "15:15"}
       ],
       "loyaltyCard": {
-        "totalCuts": 7,
+        "totalCuts": 8,
         "cutsNeeded": 8,
-        "cutsRemaining": 1
+        "cutsRemaining": 0
       }
     }
   ]
