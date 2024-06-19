@@ -50,7 +50,8 @@ body {
           width: 4rem;
           height: 4rem;
           object-fit: cover;          
-        }
+          /* animation: spin 10s 200ms ease-out infinite both alternate; */
+      }
       }
     }
 
@@ -75,5 +76,32 @@ body {
       }
     }
     
+  }
+}
+
+@keyframes spin {
+  5% {
+    transform: rotate(180deg);
+  }
+  7% {
+    transform: rotate(360deg);
+  }
+  9% {
+    transform: rotate(540deg);
+  }
+  12% {
+    transform: rotate(720deg);
+  }
+  15% {
+    transform: rotate(810deg);
+  }
+  18% {
+    transform: rotate(900deg);
+  }
+  21% {
+    transform: rotate(990deg);
+  }
+  25% {
+    transform: rotate(1080deg);
   }
 }
